@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "staffnotes"
+version = "0.1.0"
+description = "五线谱识谱卡：音名、频率、谱表位置与可打印 A4 练习"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "music", "staff", "notation", "worksheet", "printable"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+staffnotes = "staffnotes.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/staffnotes"
+Source = "https://github.com/eastyou/staffnotes"
+
+[tool.setuptools]
+packages = ["staffnotes"]
